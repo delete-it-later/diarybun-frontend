@@ -2,17 +2,20 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
   html {
     box-sizing: border-box;
     font-size: 10px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
   *,
   *:before,
   *:after {
     box-sizing: inherit;
   }
+
   body {
     margin: 0;
     padding: 0;
@@ -22,10 +25,12 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.black};
+    color: ${(props) => props.theme.pureBlack};
   }
+
   button {
     font-family: 'Montserrat';
   }

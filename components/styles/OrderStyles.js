@@ -4,9 +4,10 @@ const OrderStyles = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  border: 1px solid ${(props) => props.theme.offWhite};
-  border-top: 10px solid red;
+  border: 2px solid ${(props) => props.theme.pureWhite};
+  border-top: 10px solid ${(props) => props.theme.primary};
   box-shadow: ${(props) => props.theme.bs};
+
   & > p {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -21,6 +22,7 @@ const OrderStyles = styled.div`
       }
     }
   }
+
   .order-item {
     display: grid;
     grid-template-columns: 300px 1fr;

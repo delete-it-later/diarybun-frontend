@@ -9,8 +9,8 @@ const PriceTag = styled.span`
   line-height: 1;
   font-size: 3rem;
   font-weight: 600;
-  color: white;
-  background: ${(props) => props.theme.red};
+  color: ${(props) => props.theme.pureWhite};
+  background: ${(props) => props.theme.primary};
   transform: rotate(3deg);
 `
 

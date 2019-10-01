@@ -4,14 +4,13 @@
 }
 
 #nprogress .bar {
-  background: red;
   position: fixed;
-  z-index: 1031;
   top: 0;
   left: 0;
-
+  z-index: 1031;
   width: 100%;
   height: 5px;
+  background: #1B1D1C;
 }
 
 /* Fancy blur effect */
@@ -21,7 +20,7 @@
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px red, 0 0 5px red;
+  box-shadow: 0 0 10px #1B1D1C, 0 0 5px #1B1D1C;
   opacity: 1.0;
 
   -webkit-transform: rotate(3deg) translate(0px, -4px);
@@ -33,9 +32,9 @@
 #nprogress .spinner {
   display: block;
   position: fixed;
-  z-index: 1031;
   top: 15px;
   right: 15px;
+  z-index: 1031;
 }
 
 #nprogress .spinner-icon {
@@ -44,8 +43,8 @@
   box-sizing: border-box;
 
   border: solid 2px transparent;
-  border-top-color: red;
-  border-left-color: red;
+  border-top-color: #1B1D1C;
+  border-left-color: #1B1D1C;
   border-radius: 50%;
 
   -webkit-animation: nprogress-spinner 400ms linear infinite;
@@ -53,8 +52,8 @@
 }
 
 .nprogress-custom-parent {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .nprogress-custom-parent #nprogress .spinner,

@@ -5,12 +5,14 @@ const OrderItemStyles = styled.li`
   list-style: none;
   box-shadow: ${(props) => props.theme.bs};
   border: 1px solid ${(props) => props.theme.offWhite};
+
   h2 {
     margin-top: 0;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid ${(props) => props.theme.primary};
   }
+
   .images {
     display: grid;
     grid-gap: 10px;
@@ -22,10 +24,10 @@ const OrderItemStyles = styled.li`
       object-fit: cover;
     }
   }
+
   .order-meta {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    display: grid;
     grid-gap: 1rem;
     text-align: center;
     & > * {

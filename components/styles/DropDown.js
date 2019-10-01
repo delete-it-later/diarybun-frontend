@@ -4,7 +4,7 @@ const DropDown = styled.div`
   position: absolute;
   z-index: 2;
   width: 100%;
-  border: 1px solid ${(props) => props.theme.lightgrey};
+  border: 1px solid ${(props) => props.theme.lightGrey};
 `
 
 const DropDownItem = styled.div`
@@ -12,10 +12,11 @@ const DropDownItem = styled.div`
   align-items: center;
   padding: 1rem;
   ${(props) => (props.highlighted ? 'padding-left: 2rem;' : null)};
-  border-bottom: 1px solid ${(props) => props.theme.lightgrey};
-  border-left: 10px solid ${(props) => (props.highlighted ? props.theme.lightgrey : 'white')};
+  border-bottom: 1px solid ${(props) => props.theme.lightGrey};
+  border-left: 10px solid ${(props) => (props.highlighted ? props.theme.lightGrey : 'white')};
   background: ${(props) => (props.highlighted ? '#f7f7f7' : 'white')};
   transition: all 0.2s;
+
   img {
     margin-right: 10px;
   }
@@ -25,7 +26,6 @@ const glow = keyframes`
   from {
     box-shadow: 0 0 0px yellow;
   }
-
   to {
     box-shadow: 0 0 10px 1px yellow;
   }
@@ -33,9 +33,10 @@ const glow = keyframes`
 
 const SearchStyles = styled.div`
   position: relative;
+
   input {
-    width: 100%;
     padding: 10px;
+    width: 100%;
     border: 0;
     font-size: 2rem;
     &.loading {

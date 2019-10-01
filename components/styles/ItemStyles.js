@@ -1,18 +1,20 @@
 import styled from 'styled-components'
 
 const Item = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   border: 1px solid ${(props) => props.theme.offWhite};
-  background: white;
+  background: ${(props) => props.theme.pureWhite};
   box-shadow: ${(props) => props.theme.bs};
+
   img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     cursor: pointer;
   }
+
   p {
     flex-grow: 1;
     padding: 0 3rem;
@@ -21,19 +23,20 @@ const Item = styled.div`
     font-size: 1.5rem;
     font-weight: 300;
   }
+
   .buttonList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1px;
     width: 100%;
-    border-top: 1px solid ${(props) => props.theme.lightgrey};
-    background: ${(props) => props.theme.lightgrey};
+    border-top: 1px solid ${(props) => props.theme.lightGrey};
+    background: ${(props) => props.theme.lightGrey};
     & > * {
       padding: 1rem;
       border: 0;
       font-size: 1.5rem;
       font-weight: 500;
-      background: white;
+      background: ${(props) => props.theme.pureWhite};
       cursor: pointer;
     }
   }

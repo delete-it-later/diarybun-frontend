@@ -8,11 +8,12 @@ const SickButton = styled.button`
   font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: white;
-  background: red;
+  color: ${(props) => props.theme.pureWhite};
+  background: ${(props) => props.theme.primary};
   transform: skew(-2deg);
   transition: all 0.5s;
   cursor: pointer;
+
   &[disabled] {
     opacity: 0.5;
   }

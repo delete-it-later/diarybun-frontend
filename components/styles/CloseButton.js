@@ -6,8 +6,8 @@ const CloseButton = styled.button`
   z-index: 2;
   border: 0;
   font-size: 5rem;
-  color: white;
-  background: black;
+  color: ${(props) => props.theme.pureWhite};
+  background: ${(props) => props.theme.pureBlack};
   cursor: pointer;
 `
 

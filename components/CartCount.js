@@ -27,16 +27,16 @@ const AnimationStyles = styled.span`
 `
 
 const Dot = styled.div`
-  background: ${(props) => props.theme.red};
-  color: white;
-  border-radius: 50%;
-  padding: 0.5rem;
-  line-height: 2rem;
-  min-width: 3rem;
   margin-left: 1rem;
+  padding: 0.5rem;
+  min-width: 3rem;
+  line-height: 2rem;
+  border-radius: 50%;
   font-weight: 100;
   font-feature-settings: 'tnum';
   font-variant-numeric: tabular-nums;
+  color: ${(props) => props.theme.pureWhite};
+  background: ${(props) => props.theme.primary};
 `
 
 const CartCount = ({ count }) => (

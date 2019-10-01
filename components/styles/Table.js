@@ -4,9 +4,11 @@ const Table = styled.table`
   width: 100%;
   border: 1px solid ${(props) => props.theme.offWhite};
   border-spacing: 0;
+
   thead {
     font-size: 1.2rem;
   }
+
   td,
   th {
     position: relative;
@@ -25,6 +27,7 @@ const Table = styled.table`
       padding: 10px 5px;
     }
   }
+
   tr {
     text-align: center;
     &:hover {

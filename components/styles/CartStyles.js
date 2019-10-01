@@ -13,16 +13,18 @@ const CartStyles = styled.div`
   height: 100%;
   min-width: 500px;
   padding: 20px;
-  background: white;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%);
+  background: ${(props) => props.theme.pureWhite};
   transition: all 0.3s;
+  transform: translateX(100%);
   ${(props) => props.open && 'transform: translateX(0);'};
+
   header {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 5px solid ${(props) => props.theme.black};
   }
+
   footer {
     display: grid;
     grid-template-columns: auto auto;
@@ -36,12 +38,14 @@ const CartStyles = styled.div`
       margin: 0;
     }
   }
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: scroll;
   }
+
   @media (max-width: 480px) {
     width: 100%;
     min-width: 100%;
