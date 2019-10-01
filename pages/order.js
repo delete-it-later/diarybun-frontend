@@ -13,4 +13,5 @@ const OrderPage = ({ query }) => {
     </div>
   )
 }
+
 export default OrderPage
